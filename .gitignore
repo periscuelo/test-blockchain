@@ -21,9 +21,6 @@ lib-cov
 # Sonarqube folder
 .scannerwork
 
-# VSCODE Folder
-.vscode
-
 # Coverage directory used by tools like istanbul
 coverage
 *.lcov

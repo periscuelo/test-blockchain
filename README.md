@@ -6,8 +6,9 @@ Create on temp folder 3 files:
 - nextchain.txt
 - nextnonce.txt
 
-You can use Thunder Client to Test API. Just use the files
-on thunder folder to import and test the endpoint.
+You can use Thunder Client VSCode Extension to Test API.  
+Just use the files on thunder folder to import and test  
+the endpoint.
 
 ## Commands
  - npm run dev
