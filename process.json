@@ -1,0 +1,7 @@
+{
+  "script": "./src/index.js",
+  "watch": ["src"],
+  "watch_options": {
+    "followSymlinks": false
+  }
+}
