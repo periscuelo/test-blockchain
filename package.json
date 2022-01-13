@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "CHOKIDAR_USEPOLLING=true pm2-runtime --watch process.json",
+    "dev": "pm2-runtime --watch process.json",
     "start": "pm2-runtime process.json",
     "test": "dotenv -e .env.test -- jest --forceExit --detectOpenHandles --collect-coverage"
   },
