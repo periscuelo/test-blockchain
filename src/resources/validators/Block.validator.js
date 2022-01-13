@@ -5,7 +5,11 @@ schemas.BlockParamsSchema = {
     body: {
       type: 'object',
       properties: {
-        hash: { type: 'string' },
+        hash: {
+          type: 'string',
+          minLength: 1,
+          maxLength: 64
+        },
         message: { type: 'string' },
         nonce: { type: 'number' }
       },
