@@ -7,17 +7,19 @@ utils.isEmpty = obj => [Object, Array].includes((obj || {}).constructor) && !Obj
 
 utils.hash = (type, stringToHash) => crypto.createHash(type).update(stringToHash, 'utf-8').digest('hex').toString()
 
-utils.readFile = (file, charset = 'utf8') => {
-  return fs.readFileSync(file, charset)
+utils.readFile = (file, callback, charset = 'utf8') => {
+  return fs.readFile(file, charset, callback)
 }
 
 utils.writeOnFile = (file, dataToStore, hash, callback, flag = 'a+') => {
-  const readed = utils.readFile(file)
-  if (readed.indexOf(hash) >= 0) {
-    return false
-  } else {
-    return fs.writeFile(file, `${dataToStore}\r\n`, { flag }, callback)
-  }
+  return utils.readFile(file, (err, data) => {
+    if (err) return err
+    if (data.indexOf(hash) >= 0) {
+      return false
+    } else {
+      return fs.writeFile(file, `${dataToStore}\r\n`, { flag }, callback)
+    }
+  })
 }
 
 module.exports = utils
