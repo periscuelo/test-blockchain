@@ -1,4 +1,6 @@
 {
   "NOT_FOUND": "not found!",
-  "UNEXPECTED_ERROR": "Unexpected error!"
+  "SING_ERROR": "Something is not good!",
+  "UNEXPECTED_ERROR": "Unexpected error!",
+  "YADIW_ERROR": "You are doing it wrong!"
 }
