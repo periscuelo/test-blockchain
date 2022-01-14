@@ -26,5 +26,12 @@
     "husky": "^7.0.4",
     "jest": "^27.4.7",
     "standard": "^16.0.4"
+  },
+  "jest": {
+    "bail": true,
+    "verbose": true,
+    "collectCoverageFrom": [
+      "**/resources/**"
+    ]
   }
 }
