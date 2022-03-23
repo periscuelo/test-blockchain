@@ -4,7 +4,7 @@
 This API is responsible by create a simple block chain.
 
 We use here some technologies like:
-* [**NodeJs 16.13.2**](https://nodejs.org/en) with *ECMA 6*
+* [**NodeJs 16.14.2**](https://nodejs.org/en) with *ECMA 6*
 * [**fastify**](https://www.fastify.io) [![NPM version](https://img.shields.io/npm/v/fastify.svg?style=flat)](https://www.npmjs.com/package/fastify)
 * [**Jest (for e2e Tests)**](https://jestjs.io/) [![NPM version](https://badge.fury.io/js/jest.svg)](https://www.npmjs.com/package/jest)
 
