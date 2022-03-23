@@ -38,7 +38,7 @@ const _store = (req, res, receivedHash) => {
         return res.code(500).send(createErrorResponse('UNEXPECTED_ERROR', errW))
       } else {
         readFile('./src/temp/chains.csv', (errC, dataC) => {
-          if (errC) return res.send(errC)
+          if (errC) return res.code(500).send(createErrorResponse('UNEXPECTED_ERROR', errC))
           const chain = dataC.replace(/\r\n/g, '\n').split('\n')
 
           chain.pop()
